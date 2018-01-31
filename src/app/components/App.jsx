@@ -270,25 +270,20 @@ class App extends React.Component {
                                 <h2>{tt('navigation.intro_tagline')}</h2>
                                 <h4>{tt('navigation.intro_paragraph')}</h4>
                                 <div className="row buttonWrapper">
-                                    <div className="small-6">
-                                        <Link
-                                            className="button button--primary"
-                                            to="/pick_account"
-                                        >
-                                            {' '}
-                                            <b>
-                                                {tt('navigation.sign_up')}
-                                            </b>{' '}
-                                        </Link>
-                                    </div>
-                                    <div className="small-6">
-                                        <Link
-                                            href="/faq.html"
-                                            className="button hollow"
-                                        >
-                                            <b>{tt('navigation.learn_more')}</b>
-                                        </Link>
-                                    </div>
+                                    <Link
+                                        className="button button--primary"
+                                        to="/pick_account"
+                                    >
+                                        {' '}
+                                        <b>{tt('navigation.sign_up')}</b>{' '}
+                                    </Link>
+
+                                    <Link
+                                        href="/faq.html"
+                                        className="button ghost"
+                                    >
+                                        <b>{tt('navigation.learn_more')}</b>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="text-center welcomeImage medium-6 large-5 show-for-medium">
