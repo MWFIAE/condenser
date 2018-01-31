@@ -267,11 +267,15 @@ class App extends React.Component {
                         <div className="row">
                             <div className="large-1 show-for-large" />
                             <div className="small-12 medium-6 large-5 welcomePitch">
-                                <h2>{tt('navigation.intro_tagline')}</h2>
-                                <h4>{tt('navigation.intro_paragraph')}</h4>
+                                <h2 className="fade-in--1">
+                                    {tt('navigation.intro_tagline')}
+                                </h2>
+                                <h4 className="fade-in--3">
+                                    {tt('navigation.intro_paragraph')}
+                                </h4>
                                 <div className="row buttonWrapper">
                                     <Link
-                                        className="button button--primary"
+                                        className="button button--primary fade-in--5"
                                         to="/pick_account"
                                     >
                                         {' '}
@@ -280,7 +284,7 @@ class App extends React.Component {
 
                                     <Link
                                         href="/faq.html"
-                                        className="button ghost"
+                                        className="button ghost fade-in--7"
                                     >
                                         <b>{tt('navigation.learn_more')}</b>
                                     </Link>
