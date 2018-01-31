@@ -248,8 +248,8 @@ class App extends React.Component {
         }
 
         let welcome_screen = null;
-        if (true) {
-            //if (ip && new_visitor && this.state.showBanner) {
+
+        if (ip && new_visitor && this.state.showBanner) {
             welcome_screen = (
                 <div className="welcomeWrapper">
                     <div className="welcomeBanner">
