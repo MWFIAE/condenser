@@ -112,6 +112,10 @@ class Voting extends React.Component {
         this.handleWeightChange = weight => {
             this.setState({ weight });
         };
+        this.handleVoteInput = event => {
+            let weight = parseInt(parseFloat(event.target.value) * 100);
+            this.setState({ weight });
+        };
 
         this.toggleWeightUp = e => {
             e.preventDefault();
@@ -208,7 +212,7 @@ class Voting extends React.Component {
                         net_vesting_shares > VOTE_WEIGHT_DROPDOWN_THRESHOLD && (
                             <div className="weight-container">
                                 <div className="weight-display">
-                                    - {weight / 100}%
+                                    <input type="number" value="{weight / 100}" onChange={this.handleVoteInput} />%
                                 </div>
                                 <Slider
                                     min={100}
